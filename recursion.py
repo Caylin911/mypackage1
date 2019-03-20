@@ -1,5 +1,4 @@
 def sum_array(array):
-
     '''Return sum of all items in array'''
 
     if len(array)<=0:
