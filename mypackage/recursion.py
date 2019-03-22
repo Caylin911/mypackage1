@@ -8,6 +8,7 @@ def sum_array(array):
     else:
         return array[0] + sum_array(array[1:])
 
+
 def fibonacci(n):
 
     '''Return nth term in fibonacci sequence'''
