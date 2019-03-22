@@ -30,7 +30,7 @@ def merge_sort(items):
             l.pop(0)
     return my_list+l+r
 
-def quicksort(items):
+def quick_sort(items):
     '''Return array of items, sorted in ascending order'''
 
     i = 0
@@ -43,8 +43,8 @@ def quicksort(items):
                 items[j+1],items[i+1] = items[i+1], items[j+1]
                 i += 1
         items[0],items[i] = items[i],items[0]
-        l = quicksort(items[:i])
-        r = quicksort(items[i+1:])
+        l = quick_sort(items[:i])
+        r = quick_sort(items[i+1:])
         l.append(items[i])
         return l + r
     else:
